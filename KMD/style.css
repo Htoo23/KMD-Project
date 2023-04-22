@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter:wght@700&family=Roboto:wght@900&display=swap');
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    color:gray;
+   
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg,#345aa4 -28.35%,rgba(63,0,156,0)153.961);
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1,p{
+    margin: 0;
+}
+.row{
+    display: flex;
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+header{
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 1.5em 0;
+}
+.logo{
+    align-items: center;
+}
+.logo img{
+    max-width: 35px;
+}
+.logo h1{
+    font-weight: 700;
+    font-size: 35px;
+}
+nav ul{
+    gap: 2em;
+    align-items: center;
+}
+nav a{
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition:0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+nav a::after{
+    display: block;
+    content: "";
+    width: 0;
+    height: 3px;
+    margin:0 auto;
+    background-color: gray;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius:5px;
+    -o-border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition:0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+nav li:nth-of-type(5) a::after{
+    all:unset;
+}
+nav a:hover::after{
+    width: 30px;
+}
+nav li:nth-of-type(5) a{
+    padding: 0.5em 1em;
+    background: linear-gradient(180deg,#808080 -28.35%,rgba(63,0,156,0)153.961%); 
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius:10px;
+    -o-border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition:0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+
+}
+nav li:nth-of-type(5) a:hover,.hero a:hover{
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.25);
+
+
+}
+.hero{
+    gap:2em;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    min-height: calc(100vh - 93.6px);
+}
+.hero>*{
+    flex:1 1 25em;
+}
+.hero h1{
+    font-weight: 700;
+    font-size: clamp(40px,5vw,70px);
+    line-height: 1;
+}
+.hero p{
+    font-weight: 500;
+    font-size: 30px;
+    padding: 1em 0;
+}
+.hero a{
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0.3em 1em;
+    background: linear-gradient(90deg,#808080 0%,rgba(63,0,156,0.90)164.26%);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius:10px;
+    -o-border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition:0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.card{
+    transition: all 0.3s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0,0, 0.2);
+
+}
+/* Testimonials Section */
+#testimonials {
+    padding: 100px 0;
+  }
+  
+  #testimonials .carousel-item {
+    min-height: 330px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  #testimonials .card {
+    border: none;
+    background: #f2f2f2;
+    padding: 30px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+  }
+  
+  #testimonials .card p {
+    font-size: 16px;
+  }
+  
+  #testimonials .card h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  #testimonials .card p.text-muted {
+    margin-bottom: 0;
+  }
+  
+  #testimonials .carousel-indicators {
+    margin-bottom: 50px;
+  }
+  
+  #testimonials .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 1px;
+    background-color: #b3b3b3;
+  }
+  
+  #testimonials .carousel-indicators .active {
+    background-color: #337ab7;
+  }
+  
+  @media (min-width: 768px) {
+    #testimonials .carousel-item {
+      min-height: 380px;
+    }
+  }
+  
+
+.container-fluid {
+  background-image: url("blob-scene-haikei.svg");
+  background-position: center;
+  background-size: cover;
+}
+.testimonial-area .container{
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+}
+.testimonial-area .container .sec-title{
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+}
+.testimonial-area .container .sec-title:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height:3px;
+    background: gray;
+}
+.testimonial-area .container .sec-title h2{
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color:gray;
+}
+.testimonial-area .container .sec-title p{
+    font-size: 18px;
+    line-height: 28px;
+    color: gray;
+    text-transform: capitalize;
+}
+@media screen and (max-width:900px){
+    .toggleMenu{
+        position: absolute;
+        right: 5%;
+        background-image: url(./imgs/open.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        width: 30px;
+        height: 30px;
+        padding: 2em;
+        z-index: 100;
+        transition:background-size 0.3s ease-in-out;
+    -webkit-transition:background-size 0.3s ease-in-out;
+    -moz-transition:background-size 0.3s ease-in-out;
+    -ms-transition:background-size 0.3s ease-in-out;
+    -o-transition:background-size 0.3s ease-in-out;
+    }
+    .toggleMenu.active{
+        position: fixed;
+        background-image: url(./imgs/close.svg);
+        background-size: 25px;
+    }
+    .navigation{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-height: 0;
+        opacity: 0;
+        transform-origin: top;
+        transform: scale(1,0);
+        -webkit-transform: scale(1,0);
+        -moz-transform: scale(1,0);
+        -ms-transform: scale(1,0);
+        -o-transform: scale(1,0);
+    }
+    .navigation.active{
+        position: fixed;
+        inset: 0;
+        margin: auto;
+        max-height: 100%;
+        opacity: 1;
+        background-color:rgb(255, 255, 255);
+        transform: scale(1,1);
+        -webkit-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -o-transform: scale(1,1);
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    
+    
+}
